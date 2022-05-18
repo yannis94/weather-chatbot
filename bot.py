@@ -8,9 +8,9 @@ nlp = spacy.load("fr_core_news_md")
 config = dotenv_values(".env")
 api_key = config['API_KEY']
 
-weather_dictionnary = ["quel temps fait-il à ville", "donne moi la meteo à ville", "quelle température fait-il à ville"]
+weather_dictionnary = ["quel temps fait-il à ville", "quel temps fait il a ville", "donne moi la meteo à ville", "donne moi la météo à ville", "quelle est la temperature a ville", "quelle est la température à ville", "quelle température fait-il à ville"]
 bot_dictionnary = ["Comment puis-je vous aidez ?", "Que souhaitez vous savoir aujourd'hui", "Avez-vous besoin d'une information ?"]
-error_dictionnary = ["Je n'ai pas compris", "Je ne peux que vous indiquer la météo", "Try again dude"]
+error_dictionnary = ["Je n'ai pas compris", "Je ne peux vous indiquer uniquement la météo", "Try again dude"]
 
 def ask_user():
     random.seed()
