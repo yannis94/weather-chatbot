@@ -2,12 +2,12 @@ import bot
 
 print("------- Weather chatbot ------\n")
 while True:
-    user_question = bot.ask_user()
+    user_input = bot.ask_user()
 
-    if user_question == "quit":
+    if user_input == "quit":
         break
 
-    city = bot.get_city(user_question)
+    city = bot.get_city(user_input)
 
     if city == "":
         bot.show_error()
